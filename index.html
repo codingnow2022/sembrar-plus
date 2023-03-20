@@ -8,23 +8,518 @@
     <title>Sembrar Plus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Cabecera Website -->
-    <header></header>
+    <header>
+
+        <nav class="nav-desktop">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-5 col-md-9" id="menu-items">
+                        <ul class="menu-principal">
+                            <li><a class="active" href="#">Inicio</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Aliados</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 text-center" id="logo-principal">
+                        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo Sembrar"></a>
+                    </div>
+                    <div class="col-lg-5 col-md-3">
+                        <ul class="menu-user">
+                            <li>
+                                <form class="search" role="search">
+                                    <input class="form-control " type="search" placeholder="Escribe..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </li>
+                            <li class="cart"><a href="#"><i class="bi bi-cart4"></i> </a><span>2</span></li>
+                            <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div class="hojas">
+                <img src="img/hojas-header.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div id="carouselHeroIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h2><span>100% </span>Orgánicos</h2>
+                                    <h3>Del Campo a Tú Mesa</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores
+                                        sequi...</p>
+                                    <a href="#" class="btn-sembrar"> <i class="bi bi-cart3"></i> Comprar</a>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2><span>100% </span>Orgánicos</h2>
+                                    <h3>Del Campo a Tú Mesa</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores
+                                        sequi...</p>
+                                    <a href="#" class="btn-sembrar"> <i class="bi bi-cart3"></i> Comprar</a>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2><span>100% </span>Orgánicos</h2>
+                                    <h3>Del Campo a Tú Mesa</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores
+                                        sequi...</p>
+                                    <a href="#" class="btn-sembrar"> <i class="bi bi-cart3"></i> Comprar</a>
+                                </div>
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselHeroIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselHeroIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Secciones principales -->
-    <main></main>
+    <main>
+        <section id="nosotros">
+            <div class="container">
+                <div class="row row-reverse">
+                    <div class="col-lg-6 text-center pt-120" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <img src="img/nosotros-2.png" alt="Productos">
+                    </div>
+                    <div class="col-lg-6 text-start about">
+                        <h2>Sembrar Con Valor Social</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo delectus eligendi error
+                            officiis tempore quis assumenda deleniti aliquam. Ipsum alias, fugiat ipsam ab saepe
+                            possimus similique velit omnis earum dolorum praesentium facere. Numquam atque officia nam
+                            sequi iusto facere odio beatae. Nesciunt officiis asperiores, similique vitae sit beatae
+                            eligendi!</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit modi hic, eaque,
+                            quaerat reprehenderit dolorum exercitationem necessitatibus ex suscipit magnam illum vero a
+                            accusamus dolore autem saepe placeat? Laboriosam maxime quidem porro officia!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sunt repudiandae error rem
+                            laborum cum deserunt eveniet dolores ea distinctio.</p>
+                        <a href="#" class="btn-sembrar"><i class="bi bi-plus"></i> Conocer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="productos">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <p class="text-apoyo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus
+                    dolor qui rerum aut!
+                </p>
+                <div class="categorias-productos">
+                    <a href="#" class="btn-categoria active">Todos</a>
+                    <a href="#" class="btn-categoria">Frutas</a>
+                    <a href="#" class="btn-categoria">Verduras</a>
+                    <a href="#" class="btn-categoria">Otros</a>
+                </div>
+                <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="frutas-tab" data-bs-toggle="tab"
+                            data-bs-target="#frutas-tab-pane" type="button" role="tab" aria-controls="frutas-tab-pane"
+                            aria-selected="true">Frutas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vegetales-tab" data-bs-toggle="tab"
+                            data-bs-target="#vegetales-tab-pane" type="button" role="tab" aria-controls="vegetales-tab-pane"
+                            aria-selected="false">Vegetales</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="transformados-tab" data-bs-toggle="tab"
+                            data-bs-target="#transformados-tab-pane" type="button" role="tab" aria-controls="transformados-tab-pane"
+                            aria-selected="false">Transformados</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="frutas-tab-pane" role="tabpanel" aria-labelledby="frutas-tab"
+                        tabindex="0"><h2>Frutas</h2></div>
+                    <div class="tab-pane fade" id="vegetales-tab-pane" role="tabpanel" aria-labelledby="vegetales-tab"
+                        tabindex="0"><h2>Vegetales</h2></div>
+                    <div class="tab-pane fade" id="transformados-tab-pane" role="tabpanel" aria-labelledby="transformados-tab"
+                        tabindex="0"><h2>Transofrmados</h2></div>
+                </div> -->
+                <div class="row cont-productos">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-8.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-2.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-3.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-8.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-2.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-3.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-8.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-2.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-3.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-8.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto descuento">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-2.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-30" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="card-producto ">
+                            <a href="producto-detalle.html">
+                                <div class="card-img">
+                                    <img src="img/product-3.jpg" alt="Producto">
+                                </div>
+                                <div class="card-info">
+                                    <h3>Naranjas</h3>
+                                    <div class="price-btn-cart">
+                                        <p><span>$</span>4500 - (1Kg) </p>
+                                        <a href="#" class="comprar"><i class="bi bi-cart-plus"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-sembrar"><i class="bi bi-plus"></i> Ver más</a>
+            </div>
+        </section>
+        <section id="modulos">
+            <div class="tomate">
+                <img src="img/tomato.png" alt="Tomate">
+            </div>
+            <div class="container">
+                <h2>¿Por qué Comprar Con Nosotros?</h2>
+                <div class="row stretch">
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="card-modulos" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                            <div class="card-icon">
+                                <i class="bi bi-flower1"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Productos Naturales</h3>
+                                <p>Todos los productos ofrecidos son cocechados por agricultores colombianos</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="card-modulos" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                            <div class="card-icon">
+                                <i class="bi bi-credit-card"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Pagos 100% Seguros</h3>
+                                <p>Realiza tus compras de manera segura con nuestro servicio de Paypal</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="card-modulos" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                            <div class="card-icon">
+                                <i class="bi bi-box2-heart"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Envíos Garantizados</h3>
+                                <p>Los productos serán enviados al domicilio de tu elección.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="card-modulos" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                            <div class="card-icon">
+                                <i class="bi bi-envelope-paper-heart"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Facturación Electrónica</h3>
+                                <p>Recibe en tu correo electrónico la factura de tu compra instantaneamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>¿Quiéres ser parte de la familia sembrar?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae quasi rerum?
+                            Reiciendis sit, animi ratione facere sunt modi, deserunt error nisi quod at inventore
+                            blanditiis, unde enim? Non, iusto</p>
+                        <form action="#">
+                            <input type="email" placeholder="Escribe tu email...">
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carouse-aliados">
+            <h2>Marcas Aliadas</h2>
+            <div class="container-fluid">
+                <div class="row familia-sembrar">
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+                    <div class="cont-aliado text-center">
+                        <img src="img/familia-sembrar/aliado1.png" alt="Aliados Sembrar">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
     <!-- Pie de página -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <p>© - Todos los derechos reservados Sembrar - <a href="https://felipe-restrepo.netlify.app/"
+                    target="_blank">Restrepo Desarrollos</a> 2023
+            </p>
+            <p>
+                <a href="#" class="redes"><i class="bi bi-instagram"></i></a>
+                <a href="#"  class="redes"><i class="bi bi-facebook"></i></a>
+                <a href="#"  class="redes"><i class="bi bi-youtube"></i></a>
+            </p>
+
+        </div>
+    </footer>
 
     <!-- Copyright Luis Felipe Restrepo 05-Marzo-2023 -->
 
-
+    <!--Bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- AOS ANIMATE -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SLICK CAROUSEL -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
